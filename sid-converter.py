@@ -14,7 +14,8 @@ for line in fileinput.input(f1):
     fe_sid = int(fe_sid)
     fe_sid = str(fe_sid + 1) 
 
-#    line = re.sub('[0-9][0-9][0-9][0-9][0-9][0-9][0-9]', fe_sid, line.strip())
+# Need to add logic to detect number of digits in input sids
+
     line = re.sub('[0-9][0-9][0-9][0-9][0-9]', fe_sid, line.strip())
 
   f2.write(line)
